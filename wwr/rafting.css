@@ -3,8 +3,8 @@
 :root {
     --primary-color: #72A0C1;
     --secondary-color: #6CB4EE;
-    --accent-color: rgba(246, 142, 142, 0.4);
-    --accent-color2: rgba(163, 158, 153, 0.2);
+    --accent-color: rgba(246, 142, 142, 0.3);
+    --accent-color2: rgba(163, 158, 153, 0.7);
 
     --heading-font: Lato, sans-serif;
     --paragraph-font: Roboto, sans-serif;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     position: absolute;
     top: 50px;
-    right: 400px;
+    right: 350px;
     background-color: var(--accent-color) ;
 }
 
@@ -61,16 +61,19 @@ nav a:hover {
 article {
     position: absolute;
     top: 120px;
+    left: 20px;
+    right: 20px;
     background-color: var(--accent-color2);
+    text-align: center;
 }
 
 article img {
     float: right;
-    text-align: center;
+    padding: 10px;
 }
 
 article p {
-    text-align: center;
+    text-align: left;
 }
 
 
