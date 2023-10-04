@@ -12,24 +12,26 @@ nav {
 nav a {
     color: rgb(255, 255, 255);
     display: block;
-    padding: 20px;
+    padding: 0.5px;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 
 h1 {
     color: #0000ff;
+    border-bottom: #000 solid 1px;
+    padding: 15px;
+
 }
 
 img {
-    width: 150px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border: 1px solid steelblue;
     box-shadow: 0 0 30px gray;
-}
-
-main {
-    max-width: 840px;
+    margin: 10px;
 }
 
 main img {
@@ -40,6 +42,12 @@ main img {
 
 p {
     padding: 0;
+    margin: 10px;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 footer {
@@ -48,20 +56,26 @@ footer {
     text-align: center;
 }
 
+main {
+    grid-column: 2/5;
+    margin: 1rem;
+}
+
 aside {
-    width: 15em;
+    width: 15rem;
     text-align: center;
     position: relative;
+    grid-row: 1/4;
 }
 
 aside img {
     width: 200px;
-    height: auto;   
+    height: 200px;   
 }
 
 aside h2 {
     position: absolute;
-    top: -5px;
+    top: 70px;
     left: 50px;
 }
 
@@ -71,16 +85,29 @@ li a {
 
 ul {
     width: 40em;
+    list-style: none;
 }
 
 /*Class Selectors*/
 
 .box {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 10px;
+    padding: 10px;
     border:1px solid rgba(116, 140, 140, 0.5);
     background-color: rgba(116, 140, 140, 0.5);
     color: #000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 
