@@ -20,6 +20,14 @@
     padding: 0;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    align-items: center;
+    max-width: 1000px;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--paragraph-font);
 }
@@ -27,8 +35,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     position: absolute;
     top: 50px;
-    right: 350px;
-    background-color: var(--accent-color) ;
+    right: 290px;
+    background-color: var(--accent-color);
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px;
+}
+
+p {
+    padding: 10px;
+    margin: 10px;
 }
 
 body {
@@ -38,9 +57,8 @@ body {
 }
 
 nav {
-   
     font-size: 1.2rem;
-    display: flex;
+    grid-column: 2/7;
 }
 
 nav a {
@@ -56,6 +74,10 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+ul {
+    list-style: none;
 }
 
 article {
@@ -76,11 +98,64 @@ article p {
     text-align: left;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: var(--accent-color2);
+    padding: 30px;
+    margin: auto;
+}
+
+
 
 /*Styling Classes*/
 
 .hero {
     position: relative;
 }
+
+.nav-link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.history-section p {
+    grid-row: 1;
+    text-align: left;
+}
+
+.history-section img {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin: 18px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+.history-section {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.adventure-section {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;   
+}
+
+.adventure-section img {
+    width: 200px;
+    height: 200px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
 
 
