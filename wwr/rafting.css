@@ -25,6 +25,9 @@ header {
     grid-template-columns: 2fr 2fr 2fr 2fr;
     align-items: center;
     max-width: 1000px;
+    background-color: var(--accent-color);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 
